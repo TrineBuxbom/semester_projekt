@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/*CSS Document*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #0E1700;
+  height: 80px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  align-content: center;
+  float: left;
+  position: fixed;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 2px;
+  font-size: 19px;
+}
+
+.spritelogo {
+  background: url(../images/spritelogo.png) 0 0 no-repeat;
+	width: 150px;
+	height: 150px;
+  float: 50%;
+  z-index: 1;
+}
+
+@keyframes spritelogo {
+    0% {background-position: 0 0; }
+    100% {background-position: -9450px 0;}
+}
+
+.spritelogo:hover {
+    cursor: pointer;
+    animation: spritelogo .5s steps(63) 1;
+    animation-timing-function: .24,.95,.86,-0.05;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+.menuitem {
+  padding-top: 30px;
+  padding-right: 50px;
+}
+
+.menuitem2 {
+  padding-top: 30px;
+  padding-left: 50px;
+  text-decoration: underline;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.instagram {
+  background-image: url(../images/insta.png);
+  width: 20px;
+  height: 20px;
+  float: 80%;
+  z-index: 2;
+  padding: 10px;
+  margin-left: 37%;
+  margin-top: 20px;
+  position: absolute;
+}
+.linkedin {
+  background-image: url(../images/linkedin.png);
+  width: 20px;
+  height: 20px;
+  float: 80%;
+  z-index: 2;
+  padding: 10px;
+  margin-left: 41%;
+  margin-top: 20px;
+  position: absolute;
+}
+.facebook {
+  background-image: url(../images/facebook.png);
+  width: 20px;
+  height: 20px;
+  float: 80%;
+  z-index: 2;
+  padding: 10px;
+  margin-left: 45%;
+  margin-top: 20px;
+  position:absolute;
+}
+
+/* FROM HERE THE CONTENT STARTS*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #F9F9F9;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+article {
+  float: left;
+  margin-left: 55%;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+img {
+  width: 50%;
+  height: 100%;
+  padding-top: 20px;
+  z-index: -1;
+  position: fixed;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Marion", serif;
+  font-weight: lighter;
+  margin-top: 11%;
+  margin-left: 55%;
+  color: #839788;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: "Marion", serif;
+  font-weight: lighter;
+  margin-top: 30px;
+  color: #0E1700;
+  letter-spacing: 1px;
+}
+
+
+ul.contactinfo {
+  list-style-type: none;
+  list-style-image: url(../images/leaf.png);
+  float: left;
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+li {
+  padding-top: 18px;
+}
+
+.mail {
+  color: #000;
+  text-decoration: underline;
+}
+
+.some {
+  list-style: none;
+  margin-top: 5%;
+}
+
+.instasmall {
+  background-image: url(../images/insta.png);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+.linkedsmall {
+  background-image: url(../images/linkedin.png);
+  width: 40px;
+  height: 40px;
+  margin-left: 4%;
+  position: absolute;
+}
+.facesmall {
+  background-image: url(../images/facebook.png);
+  width: 40px;
+  height: 40px;
+  margin-left: 8%;
+  position: absolute;
+}
+
+footer {
+  color: #fff;
+  position: fixed;
+  opacity: 0.7;
+  bottom: 0;
+  margin-left: 1%;
+  margin-bottom: 0.5%;
+  z-index: 5;
+  position: absolute;
+}
